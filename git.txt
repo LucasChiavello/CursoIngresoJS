@@ -3,3 +3,4 @@ git status
 git add .
 git commit -m "Un comentario"
 git push origin master
+git pull origin master     para descargar los ultimos cambios
