@@ -26,6 +26,7 @@ function mostrar()
 	var numero2;
 	var max;
 	var min;
+	var mensaje,
 
 	max = 52;
 	min = 1;
@@ -36,24 +37,28 @@ function mostrar()
 	console.log(numero2);
 
 
-	// PARTE A 
+	// PARTE A y B
 
 	if (numero1 % 2 == 0 && numero2 % 2 == 0) {
 		multiplicacion = numero1 * numero2;
 		alert("multiplicacion");
-	}
-	
-	// // PARTE B 
-
-	if (numero1 % 2 && numero2 % 2) {
-		resta = numero1 - numero2;
-		alert("resta");
+	}else {
+		if (numero1 % 2 && numero2 % 2) {
+			resta = numero1 - numero2;
+			alert("resta");
+		}
 	}
 
 	// //PARTE C
 
-	if (numero1 % 5 == 0 || numero2 % 5 ==0) {
+	if (numero1 % 5 == 0) {
 		elevar = Math.pow(numero1, 3);
 		alert("elevar");
+	}else {
+		if (numero2 % 5 ==0) {
+			elevar = Math.pow(numero1, 3);
+			alert("elevar");
+		}
 	}
+	alert(mensaje);
 }
