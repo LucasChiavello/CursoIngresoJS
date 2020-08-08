@@ -17,12 +17,12 @@ function mostrar()
 	var numeroIngresado;
 	var sumaNegativos=0;
 
-	respuesta="si";
+	respuesta = true;
 
-	while(respuesta=="si")
+	while(respuesta)
 	{
 		
-		respuesta=prompt("desea continuar?");
+		respuesta = confirm("Desea continuar?");
 	}//fin del while
 
 	document.write("la suma de negativos es :"+sumaNegativos);

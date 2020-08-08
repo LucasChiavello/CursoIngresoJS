@@ -7,12 +7,31 @@ function mostrar()
 	var contador;
 	var acumulador;
 	var respuesta;
+	var numero;
+
+	respuesta = true;
 	contador=0;
 	acumulador=0;
-	respuesta='si';
+	
 
+	while (respuesta) {
+		contador++;
+		
+		numero = prompt("Ingrese un numero");
+		numero = parseInt(numero);
+		
+		while (isNaN(numero)) {
+			numero = prompt("Ingrese un numero");
+			numero = parseInt(numero);
+		}
+
+		acumulador = acumulador + numero;
+		respuesta = confirm("Desea continuar?");
+	}
+
+	console.log(contador);
 
 	txtIdSuma.value=acumulador;
 	txtIdPromedio.value=acumulador/contador;
-
+ 
 }//FIN DE LA FUNCIÓN

@@ -4,7 +4,7 @@ function mostrar()
 	var max;
 	var min;
 
-	max = 11;
+	max = 11;  // el numero maximo tiene que ser 1 numero + que el numero que queremos
 	min = 1;
 
 	// Math.floor(Math.random() * (max - min)) + min;
